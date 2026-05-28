@@ -176,10 +176,6 @@ namespace CyberBot_PART_2
             // The question text and options are re-rendered from the bot's last response
             // so the user can also click instead of typing
             QuizPanelBorder.Visibility = Visibility.Visible;
-
-            // We rebuild the options each time UpdateQuizPanel is called during a quiz
-            // Parse current question from the quiz pool via a fresh peek
-            // (EnhancedBotHandler exposes what it needs; we call GetCurrentQuestion)
             RenderQuizButtons();
         }
 
